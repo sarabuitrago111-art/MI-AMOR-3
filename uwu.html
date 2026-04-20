@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Felices 6 meses</title>
+</head>
+<body>
+<body style="
+    background-image: url('https://i.pinimg.com/originals/1a/0c/a5/1a0ca5723cb409294036416cbe390e7b.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+<body style="display:flex; justify-content:center; align-items:center; height:100vh;">
+
+    <div id="caja" style="
+        width:400px;
+        height:300px;
+        border:2px solid black;
+        text-align:center;
+        position:relative;
+        padding-top:40px;
+    ">
+
+        <h2>¿Quieres seguir siendo mi novia? ♥ </h2>
+
+        <button onclick="alert('Sabía que sí 😎')">
+            Sí
+        </button>
+
+        <button id="noBtn" style="position:absolute;">
+            No
+        </button>
+
+    </div>
+
+    <script>
+        const noBtn = document.getElementById("noBtn");
+        const caja = document.getElementById("caja");
+
+        noBtn.addEventListener("mouseover", function() {
+
+            const maxX = caja.clientWidth - noBtn.offsetWidth;
+            const maxY = caja.clientHeight - noBtn.offsetHeight;
+
+            const x = Math.random() * maxX;
+            const y = Math.random() * maxY;
+
+            noBtn.style.left = x + "px";
+            noBtn.style.top = y + "px";
+        });
+    </script>
+
+<p style="color: red;">Mi cielito lindo</p>
+    <h1>FELICES 6 MESES!!!!</h1>
+    <p>Te amo corazón de melocotón, felices 6 meses, gracias por aguantarme tanto tiempo <3.</p>
+<img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/133.png" alt="Imagen web">
+<img src="https://media.tenor.com/rcvI6iu2HrYAAAAM/pokemon-eevee-eevee.gif">
+
+<p>Gracias por ser tan amorosa, paciente, con ojos tan lindos y sobre todo, culona <3.</p>
+<img src="https://giphy.com/stickers/glamnetic-transparent-y2k-glamneticy2k-2SKetE43GiWZh2n0jE">
+<img src="https://i.pinimg.com/originals/eb/ff/42/ebff420d32790f7202c5c5102a2a27ca.gif">
+
+<body style="text-align:center; margin-top:100px; font-family:sans-serif;">
+
+    <h1>¿Me amas? 💕</h1>
+
+    <button id="loveBtn" style="font-size:20px; padding:10px 20px;">
+        Sí 💖
+    </button>
+
+    <div id="hearts"></div>
+
+    <script>
+        const btn = document.getElementById("loveBtn");
+        const hearts = document.getElementById("hearts");
+
+        let size = 20;
+
+        btn.onclick = function() {
+            size += 5;
+            btn.style.fontSize = size + "px";
+
+            const heart = document.createElement("div");
+            heart.innerHTML = "💖";
+            heart.style.position = "absolute";
+            heart.style.left = Math.random() * window.innerWidth + "px";
+            heart.style.top = Math.random() * window.innerHeight + "px";
+            heart.style.fontSize = "30px";
+
+            hearts.appendChild(heart);
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>
